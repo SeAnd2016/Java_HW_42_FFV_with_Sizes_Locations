@@ -3,11 +3,7 @@ package core;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.safari.SafariDriver;
-
-import com.gargoylesoftware.htmlunit.BrowserVersion;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class HtmlUnit {
 	
@@ -19,16 +15,16 @@ public class HtmlUnit {
 		Logger logger = Logger.getLogger("");
 		logger.setLevel(Level.OFF);
 		
-		String url = "http://facebook.com/";
+		String url = "http://alex.academy/exe/signup/v1/index.php";
 
-		//driver = new HtmlUnitDriver();
+		driver = new HtmlUnitDriver();
 		
-		//WebDriver driver = new HtmlUnitDriver();
-		//((HtmlUnitDriver) driver).setJavaScriptEnabled(true); //JavaScript Enable
+		WebDriver driver = new HtmlUnitDriver();
+		((HtmlUnitDriver) driver).setJavascriptEnabled(true); //JavaScript Enable
 		
 		driver.get(url);
 		
-		System.out.println((String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;"));
+		//System.out.println((String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;"));
 		System.out.println("Page URL: " + driver.getCurrentUrl());
 		System.out.println("Page Title: " + driver.getTitle());
 		
