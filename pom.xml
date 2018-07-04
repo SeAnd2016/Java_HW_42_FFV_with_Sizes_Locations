@@ -48,6 +48,8 @@
     </dependency>
     
 <!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>htmlunit-driver</artifactId>
